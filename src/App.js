@@ -1,13 +1,16 @@
 import React from "react";
-import Pokegame from "./Pokecard";
+import Pokedex from './Pokedex';
+import items from './items';
+import moreItems from './moreItems';
 import './App.css';
 
 function App() {
   return (
-    <div className="App">
-      <Pokecard />
-    </div>
+    <>
+      <Pokedex items={items} username="Row 1" />
+      <Pokedex items={moreItems} username="Row 2" />
+    </>
   );
-}
+};
 
 export default App;
